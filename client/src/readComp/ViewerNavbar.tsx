@@ -11,7 +11,7 @@ import { AddBookMarkModal } from "./BookmarkModal.tsx";
 import BookmarkList from "./BookmarkList";
 import ChapterList from "./ChapterList";
 
-const ViewerNavbar = ({ title, toc, bkid, renditionRef }) => {
+const ViewerNavbar = ({ title, toc , bkid , renditionRef }) => {
   const [chapsOn, setChapsOn] = useState(false);
   const [bookmarksOn, setBookmarksOn] = useState(false);
   const [selectedTab, setSelectedTab] = useState(0);
@@ -46,7 +46,7 @@ const ViewerNavbar = ({ title, toc, bkid, renditionRef }) => {
 
   const removeHighlight = (cfiRange) => {
     setHighlights((prev) =>
-      prev.filter((highlight) => highlight.cfiRange !== cfiRange),
+      prev.filter((highlight) => highlight.cfiRange !== cfiRange)
     );
     renditionRef.current.annotations.remove(cfiRange, "highlight");
   };
@@ -72,6 +72,8 @@ const ViewerNavbar = ({ title, toc, bkid, renditionRef }) => {
 
         {/* Nav Bar  */}
         <div className="absolute w-full justify-end flex items-center right-4 space-x-2">
+          
+
           <div className="relative">
             <button
               onClick={() => setBookmarksOn(!bookmarksOn)}
@@ -209,3 +211,5 @@ const ViewerNavbar = ({ title, toc, bkid, renditionRef }) => {
 };
 
 export default ViewerNavbar;
+
+

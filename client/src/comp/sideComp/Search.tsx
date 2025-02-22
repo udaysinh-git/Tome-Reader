@@ -36,7 +36,7 @@ export const Search = (props) => {
 
     // Listen for changes to the prefers-color-scheme media query
     prefersDark.addEventListener("change", (mediaQuery) =>
-      initializeDarkTheme(mediaQuery.matches),
+      initializeDarkTheme(mediaQuery.matches)
     );
   }, []);
 

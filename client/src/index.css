@@ -1,3 +1,6 @@
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,16 +10,20 @@
   src: url("./fonts/SF-Pro-Display-Regular.ttf");
 }
 
+
+
 body {
   color-scheme: dark;
-  all: unset;
-  font-family: "SFPro";
+  all : unset;
+  font-family: 'SFPro';
   margin: 0;
   padding: 0;
   min-width: 100vw;
-  background-color: white !important;
+background-color: white !important;
   max-height: 100vh;
   /* overflow-x: hidden; */
+  
+  
 }
 
 * {
@@ -31,13 +38,14 @@ body {
   width: 20px; /* Set a specific slider handle width */
   height: 20px;
   border-radius: 100px;
-  /* Slider handle height */
+   /* Slider handle height */
   background: #4123c9; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 
 .innerShadow {
-}
+  
+} 
 
 #root {
   max-width: 100%;
@@ -47,7 +55,8 @@ body {
 }
 
 .meow-in:focus {
-  border: 10px blue;
+  
+  border: 10px blue ;
 }
 
 .mac-window {
@@ -82,13 +91,15 @@ body {
   background-color: #28c940;
 }
 
+
+
 #child:hover + #parent {
   background-color: aliceblue !important ;
 }
 
 .titlebar {
-  -webkit-app-region: drag; /* Allow user to drag the window using this titlebar */
-  -webkit-user-select: none; /* Prevent user from selecting things */
+  
+  -webkit-app-region: drag;    /* Allow user to drag the window using this titlebar */
+  -webkit-user-select: none;   /* Prevent user from selecting things */
   user-select: none;
 }
-

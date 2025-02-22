@@ -66,10 +66,7 @@ export const ModaleAddFolder = (props) => {
     setloading(true);
     let d = await axios.get(url + "addFolder?path=" + path);
 
-    if (d.data?.res === "NVP") {
-      setStatus(true);
-      setloading(false);
-    }
+    
     console.log(d.data.res);
     // if (d.data.res === "Done") {
     //   setloading(false);
@@ -77,9 +74,11 @@ export const ModaleAddFolder = (props) => {
     // await axios.get(url + "allBooks?path=" + path);
     // await axios.get(url + "serveEpub?path=" + path);
     console.log(d.data.res);
-    if (d.data.res === "Done") {
-      props.setAddModle(false);
+    if (d.status === 200) {
+      setloading(false);
       props.refresh((f) => !f);
+      props.setAddModle(false);
+      
     }
   };
 
@@ -139,13 +138,14 @@ export const ModaleAddBook = (props) => {
   const url = "http://localhost:3002/";
   const [Status, setStatus] = useState(false);
   const [loading, setloading] = useState(false);
+
   const inchange = (event) => {
     setpath(event.target.value);
   };
 
   const handleAdd = () => {
+    setloading(true);
     let f = async () => {
-      setloading(true);
       let d = await axios.post(
         url + "addBook/",
         { pm: path },
@@ -155,17 +155,15 @@ export const ModaleAddBook = (props) => {
           },
         },
       );
-      console.log(d.data.res);
-      if (d.data.res === "NVP") {
-        setStatus(true);
-        setloading(false);
-      }
+      console.log(d.data , d.status);
 
-      if (d.data.res === "Done") {
-        setloading(true);
-        props.setAddModle(false);
+      if(d.status === 200){
+        setloading(false)
+        
         props.refresh((f) => !f);
+        props.setAddModle(false);
       }
+      
     };
     f();
   };

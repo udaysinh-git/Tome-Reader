@@ -155,7 +155,7 @@ body {
         <ViewerNavbar
           title={title}
           toc={toc}
-          bkid={bkid}
+          bkid = {bkid}
           renditionRef={renditionRef}
         />
 

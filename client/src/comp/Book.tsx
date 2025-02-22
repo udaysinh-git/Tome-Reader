@@ -37,7 +37,7 @@ export const Book = (props) => {
     window.open(
       "/read/" + props.bok.id,
       "_blank",
-      "top=200,left=200,width=1000,frame=false,nodeIntegration=no",
+      "top=200,left=200,width=1000,frame=false,nodeIntegration=no"
     );
   };
 
@@ -56,14 +56,14 @@ export const Book = (props) => {
           headers: {
             "Content-Type": "application/json",
           },
-        },
+        }
       );
     };
 
     t();
     setrefreshTag((m) => !m);
 
-    console.log(cover);
+    console.log(cover)
   }
   return (
     <motion.div
@@ -197,7 +197,7 @@ export const TagComp = (props) => {
           headers: {
             "Content-Type": "application/json",
           },
-        },
+        }
       );
       props.fresh((m) => !m);
     };
