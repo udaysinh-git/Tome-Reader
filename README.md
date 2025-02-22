@@ -28,11 +28,13 @@ Tome Reader is an elegant and efficient book reader application supporting EPUB,
 - <b>☁️ Cloud Sync</b>: Sync progress across multiple devices.<br>
 - <b>🌒 Dark Mode</b>: Read comfortably in low-light conditions.<br>
 
-<h1><img src="https://github.com/user-attachments/assets/5dc57a60-58e5-4cc2-9623-6616ecce5ba4" width="150" height="150" /> Installation & Setup</h1>
+
+<h1><img src="https://github.com/user-attachments/assets/5e10c52c-837c-4689-8d87-9c76d4c0bf5d" width="28" height="28" /> Installation & Setup</h1>
+
 1. Clone the repository:
      ```bash
      git clone https://github.com/your-username/sleek-reader.git
-     cd sleek-reader
+     cd tome-reader
      ```
 2. Install dependencies:
    ```bash
