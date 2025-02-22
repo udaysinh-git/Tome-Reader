@@ -1,6 +1,6 @@
-# Tome-Reader
+# 📖Tome-Reader
 
-A sleek and efficient book reader app for EPUB , PDF , CBZ , etc files. Features include bookmarks, highlights, customizable tags, folder organization, word definitions, and folder sync for seamless reading. 📖✨
+Tome Reader is an elegant and efficient book reader application supporting EPUB, PDF, CBZ, and more. Designed for seamless reading, it offers features like bookmarks, highlights, customizable tags, and folder organization to enhance your digital reading experience. 📖✨
 
 # 🚀 Features
 
