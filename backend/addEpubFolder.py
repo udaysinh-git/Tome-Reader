@@ -1,26 +1,42 @@
 import sys
 import os
 import shutil
-from db.database import EPUB_FOLDER
+import json
 
-def process_epub_folder(base_path, epubFolder=EPUB_FOLDER, book_files=[]):
-    for book in book_files:
-        book_id = book['id']
-        src_epub = os.path.join(base_path, book['filePath']) + '.epub'
-        dest_epub = os.path.join(epubFolder, book_id) + '.epub'
-        if os.path.exists(src_epub):
-            try:
-                shutil.copy(src_epub, dest_epub)
-                print(f"Copied {src_epub} to {dest_epub}")
-            except Exception as e:
-                print(f"Error copying {src_epub}: {e}")
-        else:
-            print(f"File {src_epub} not found.")
+# Load JSON data
+try:
+    with open('./temp.json') as temp:
+        tempData = json.load(temp)
+except FileNotFoundError:
+    print("temp.json file not found.")
+    sys.exit(1)
+except json.JSONDecodeError:
+    print("Error decoding JSON from temp.json.")
+    sys.exit(1)
 
-if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: addEpubFolder.py /path/to/base")
-        sys.exit(1)
-    base = sys.argv[1]
-    book_files = []
-    process_epub_folder(base, EPUB_FOLDER, book_files)
+# Ensure command line arguments are provided
+if len(sys.argv) < 2:
+    print("Usage: script_name.py /path/to/base/directory")
+    sys.exit(1)
+
+base = sys.argv[1]
+
+# Set EPUB folder path
+epubFolder = r'C:\Users\vikle\Documents\GitHubProjects\Epub-book-Reader\epubBooks'
+if not os.path.exists(epubFolder):
+    print(f"EPUB folder path {epubFolder} does not exist.")
+    sys.exit(1)
+
+# Process each book
+for bk in tempData['currentBooks']:
+    try:
+        epubDes = os.path.join(epubFolder, bk['id']) + '.epub'
+        fileName = os.path.join(base, bk['filePath']) + '.epub'
+        print(f"Copying from {fileName} to {epubDes}")
+        shutil.copy(fileName, epubDes)
+    except FileNotFoundError:
+        print(f"File {fileName} not found.")
+    except Exception as e:
+        print(f"Error occurred: {e}")
+
+print("Process completed.")
