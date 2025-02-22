@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+*.env
+*.venv
+
+# Python-specific logs
+*.log
+*.sqlite3
+
+# Vite build files
+dist/
+node_modules/
+.vite/
+
+# Dependencies
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Editor and system files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# EPUB.js files and generated ebooks
+*.epub
+*.mobi
+*.azw3
+.epubjs/
+
+# Cache
+.cache/
+.npm/
+.pip-cache/
+
+# Logs and debugging
+logs/
+*.log
+*.out
+*.pid
+*.seed
+*.state
+
+# Temporary files
+*.tmp
+*.bak
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Testing
+__tests__/
+coverage/
+pytest_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
