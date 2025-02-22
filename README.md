@@ -22,7 +22,7 @@ Tome Reader is an elegant and efficient book reader application supporting EPUB,
 - <b>Other</b>: Tesseract.js for text recognition<br>
 
 
-<h2><img src="https://github.com/user-attachments/assets/34c6c26c-69c7-40c8-aee5-105f84d3c245" width="30" height="30" /> Future Enhancements</h2>
+<h2><img src="https://github.com/user-attachments/assets/5e10c52c-837c-4689-8d87-9c76d4c0bf5d" width="28" height="28" /> Future Enhancements</h2>
 - <b>🤖 AI-Powered Summaries</b>:  Generate concise summaries of your books.<br>
 - <b>🔊 Voice Narration</b>: Listen to books with built-in text-to-speech.<br>
 - <b>☁️ Cloud Sync</b>: Sync progress across multiple devices.<br>
