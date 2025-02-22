@@ -29,7 +29,9 @@ Tome Reader is an elegant and efficient book reader application supporting EPUB,
 - <b>🌒 Dark Mode</b>: Read comfortably in low-light conditions.<br>
 
 
-<h2><img src="https://github.com/user-attachments/assets/5e10c52c-837c-4689-8d87-9c76d4c0bf5d" width="28" height="28" /> Installation & Setup</h2>
+
+
+<h2><img src="https://github.com/user-attachments/assets/b44eadb7-c682-45ed-80c7-73a6a9ffe305" width="28" height="28" /> Installation & Setup</h2>
 
 1. Clone the repository:
      ```bash
