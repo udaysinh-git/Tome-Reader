@@ -15,6 +15,12 @@ Tome Reader is an elegant and efficient book reader application supporting EPUB,
 - 🔄 **Folder Sync**: Keep your reading progress and collections synchronized.
 
 
+<h2><img src="https://github.com/user-attachments/assets/a0140599-987a-43f8-9fd6-1307e36cec54" width="32" height="32" /> Preview</h2> 
+
+![image](https://github.com/Vikleoboy/Epub-book-Reader/assets/87757168/6c690388-2fcd-4588-bd53-4e5690a8c542)
+![image](https://github.com/Vikleoboy/Epub-book-Reader/assets/87757168/3745d516-9238-4b16-9560-56a299f68164)
+
+
 <h2><img src="https://github.com/user-attachments/assets/c7c54317-9e61-4621-99c5-b4c8c1c6ecac" width="28" height="28" /> Tech Stack</h2>
 - <b>Frontend</b>: React Native <br>
 - <b>Backend</b>: Node.js with Firebase <br>
