@@ -3,7 +3,7 @@ import React from "react";
 import "./css/readBook.scss";
 import { useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
-//import EpubViewer from "../EpubViewer.tsx";
+import EpubViewer from "../EpubViewer.tsx";
 // import { WebView } from "react-webview";
 // import "C:/Users/Vikleo/Desktop/books/Eric-Jorgenson_The-Almanack-of-Naval-Ravikant_EBOOK_v103/OEBPS/css/style.css";
 
@@ -22,6 +22,6 @@ export const ReadBook = () => {
   }, []);
 
   if (url !== null) {
-    return <div>Some</div>;
+    return <EpubViewer bkid={id} url={url} />;
   }
 };
